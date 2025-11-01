@@ -1,0 +1,5 @@
+namespace Realworlddotnet.Api.Features.Profiles;
+
+public record ProfilesEnvelope<T>(T Profile);
+
+public record Profile(string Username, string Bio, string Image, bool Following);
